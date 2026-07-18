@@ -1,0 +1,1965 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hollomind — AI-Powered Augmented Reality for Enterprise</title>
+  <meta name="description"
+    content="Hollomind is the leading B2B SaaS platform for enterprise augmented reality. Deploy AI-powered AR training, analytics, and collaboration tools at scale." />
+  <meta name="keywords"
+    content="augmented reality, AR SaaS, enterprise AR, AI AR platform, AR training, AR analytics, B2B AR" />
+  <meta property="og:title" content="Hollomind — AI-Powered AR for Enterprise" />
+  <meta property="og:description"
+    content="Deploy intelligent augmented reality at enterprise scale. Train smarter, collaborate faster, and see further with Hollomind." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%237C3AED'/><text x='50%' y='58%' dominant-baseline='middle' text-anchor='middle' font-size='18' fill='white'>◈</text></svg>" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════════
+       MOBILE MENU
+  ═══════════════════════════════════════════════════ -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Mobile navigation">
+    <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">✕</button>
+    <nav class="mobile-menu-links">
+      <a href="#products" class="mobile-menu-link" onclick="closeMobileMenu()">Products</a>
+      <a href="#features" class="mobile-menu-link" onclick="closeMobileMenu()">Platform</a>
+      <a href="#how-it-works" class="mobile-menu-link" onclick="closeMobileMenu()">How It Works</a>
+      <a href="#pricing" class="mobile-menu-link" onclick="closeMobileMenu()">Pricing</a>
+      <a href="#resources" class="mobile-menu-link" onclick="closeMobileMenu()">Resources</a>
+      <a href="#about" class="mobile-menu-link" onclick="closeMobileMenu()">About</a>
+      <a href="#contact-us" class="mobile-menu-link" onclick="closeMobileMenu()">Contact</a>
+    </nav>
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <a href="#" class="btn btn-secondary" style="justify-content:center;" id="mobileSignin">Sign In</a>
+      <a href="#cta" class="btn btn-primary" style="justify-content:center;" onclick="closeMobileMenu()"
+        id="mobileGetStarted">Get Started Free</a>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════
+       NAVBAR
+  ═══════════════════════════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <!-- Logo -->
+        <a href="#" class="nav-logo" id="navLogo">
+          <div class="nav-logo-icon" aria-hidden="true">◈</div>
+          Hollomind
+        </a>
+
+        <!-- Desktop Nav Links -->
+        <nav class="nav-links" aria-label="Main navigation">
+          <div class="nav-dropdown-wrapper">
+            <a href="#products" class="nav-link" id="navProducts">Products ▾</a>
+            <div class="nav-dropdown" role="menu">
+              <a href="#products" role="menuitem" id="ddVisionAI">
+                <div class="dd-icon" style="background:rgba(124,58,237,0.15);">🧠</div>
+                <div>
+                  <div style="font-weight:600;color:var(--text-primary);font-size:0.85rem;">AR Vision AI</div>
+                  <div style="font-size:0.75rem;">Spatial mapping & object recognition</div>
+                </div>
+              </a>
+              <a href="#products" role="menuitem" id="ddSmartTrain">
+                <div class="dd-icon" style="background:rgba(6,182,212,0.15);">🎓</div>
+                <div>
+                  <div style="font-weight:600;color:var(--text-primary);font-size:0.85rem;">SmartTrain AR</div>
+                  <div style="font-size:0.75rem;">AI-adaptive employee training</div>
+                </div>
+              </a>
+              <a href="#products" role="menuitem" id="ddAnalytics">
+                <div class="dd-icon" style="background:rgba(16,185,129,0.15);">📊</div>
+                <div>
+                  <div style="font-weight:600;color:var(--text-primary);font-size:0.85rem;">Analytics Engine</div>
+                  <div style="font-size:0.75rem;">ML-powered usage insights</div>
+                </div>
+              </a>
+              <a href="#products" role="menuitem" id="ddStudio">
+                <div class="dd-icon" style="background:rgba(236,72,153,0.15);">🎨</div>
+                <div>
+                  <div style="font-weight:600;color:var(--text-primary);font-size:0.85rem;">Hollomind Studio</div>
+                  <div style="font-size:0.75rem;">No-code AR content builder</div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <a href="#features" class="nav-link" id="navPlatform">Platform</a>
+          <a href="#how-it-works" class="nav-link" id="navHowItWorks">How It Works</a>
+          <a href="#pricing" class="nav-link" id="navPricing">Pricing</a>
+          <a href="#resources" class="nav-link" id="navResources">Resources</a>
+          <a href="#about" class="nav-link" id="navAbout">About</a>
+          <a href="#contact-us" class="nav-link" id="navContact">Contact</a>
+        </nav>
+
+        <!-- Nav Actions -->
+        <div class="nav-actions">
+          <a href="#" class="btn btn-secondary btn-sm" id="navSignIn">Sign In</a>
+          <a href="#cta" class="btn btn-primary btn-sm" id="navGetStarted">Get Started →</a>
+          <button class="nav-mobile-toggle" id="mobileMenuToggle" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ═══════════════════════════════════════════════════
+         HERO SECTION
+    ═══════════════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+        <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+        <div class="hero-orb hero-orb-3" aria-hidden="true"></div>
+        <div class="hero-grid" aria-hidden="true"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero-content">
+          <!-- Left: Copy -->
+          <div class="hero-left">
+            <div class="hero-announcement" id="heroAnnouncement">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              🚀 Hollomind 3.0 with GPT-4o Vision integration is live
+            </div>
+
+            <h1 class="hero-headline" id="heroHeadline">
+              Augment Your<br />
+              <span class="text-gradient">Enterprise</span> with<br />
+              Intelligent AR
+            </h1>
+
+            <p class="hero-description" id="heroDescription">
+              The only B2B SaaS platform that combines AI-powered spatial computing,
+              adaptive training, and real-time analytics — helping enterprise teams
+              work smarter in the physical world.
+            </p>
+
+            <div class="hero-cta" id="heroCta">
+              <a href="#cta" class="btn btn-primary btn-lg" id="heroStartBtn">
+                Start Free Trial
+                <span aria-hidden="true">→</span>
+              </a>
+              <a href="#how-it-works" class="btn btn-secondary btn-lg" id="heroWatchBtn">
+                <span aria-hidden="true">▶</span>
+                Watch Demo
+              </a>
+            </div>
+
+            <div class="hero-trust" id="heroTrust">
+              <div class="hero-trust-logos" aria-label="Trusted by teams">
+                <div class="trust-avatar" aria-hidden="true">JM</div>
+                <div class="trust-avatar" aria-hidden="true">SK</div>
+                <div class="trust-avatar" aria-hidden="true">AL</div>
+                <div class="trust-avatar" aria-hidden="true">RB</div>
+                <div class="trust-avatar" aria-hidden="true">+</div>
+              </div>
+              <div class="hero-trust-text">
+                <strong>2,400+ enterprise teams</strong>
+                deploy AR with Hollomind monthly
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Dashboard Visual -->
+          <div class="hero-visual" id="heroVisual" aria-label="Hollomind platform dashboard preview">
+            <div class="hero-dashboard">
+              <div class="dashboard-header">
+                <div class="dashboard-dots" aria-hidden="true">
+                  <span class="dot-red"></span>
+                  <span class="dot-yellow"></span>
+                  <span class="dot-green"></span>
+                </div>
+                <span class="dashboard-title">HOLLOMIND ANALYTICS DASHBOARD</span>
+              </div>
+
+              <div class="dashboard-metric-row">
+                <div class="dash-metric">
+                  <div class="dash-metric-label">AR Sessions</div>
+                  <div class="dash-metric-value text-gradient" id="metricSessions">0</div>
+                  <div class="dash-metric-change">↑ 24% this week</div>
+                </div>
+                <div class="dash-metric">
+                  <div class="dash-metric-label">Completion Rate</div>
+                  <div class="dash-metric-value" style="color:var(--emerald);" id="metricCompletion">0%</div>
+                  <div class="dash-metric-change">↑ 8.3 pts</div>
+                </div>
+                <div class="dash-metric">
+                  <div class="dash-metric-label">AI Predictions</div>
+                  <div class="dash-metric-value" style="color:var(--cyan);" id="metricPredictions">0</div>
+                  <div class="dash-metric-change">↑ 12% accuracy</div>
+                </div>
+              </div>
+
+              <div class="dashboard-chart-area" aria-label="Weekly AR session activity chart">
+                <div class="chart-bar-wrap">
+                  <div class="chart-bar"
+                    style="height:45%;background:linear-gradient(180deg,var(--violet),rgba(124,58,237,0.3));"></div>
+                  <span class="chart-label">M</span>
+                </div>
+                <div class="chart-bar-wrap">
+                  <div class="chart-bar"
+                    style="height:60%;background:linear-gradient(180deg,var(--violet),rgba(124,58,237,0.3));"></div>
+                  <span class="chart-label">T</span>
+                </div>
+                <div class="chart-bar-wrap">
+                  <div class="chart-bar"
+                    style="height:80%;background:linear-gradient(180deg,var(--cyan),rgba(6,182,212,0.3));"></div><span
+                    class="chart-label">W</span>
+                </div>
+                <div class="chart-bar-wrap">
+                  <div class="chart-bar"
+                    style="height:55%;background:linear-gradient(180deg,var(--violet),rgba(124,58,237,0.3));"></div>
+                  <span class="chart-label">T</span>
+                </div>
+                <div class="chart-bar-wrap">
+                  <div class="chart-bar"
+                    style="height:95%;background:linear-gradient(180deg,var(--cyan),rgba(6,182,212,0.3));animation-delay:0.2s;">
+                  </div><span class="chart-label">F</span>
+                </div>
+                <div class="chart-bar-wrap">
+                  <div class="chart-bar"
+                    style="height:70%;background:linear-gradient(180deg,var(--violet),rgba(124,58,237,0.3));"></div>
+                  <span class="chart-label">S</span>
+                </div>
+                <div class="chart-bar-wrap">
+                  <div class="chart-bar"
+                    style="height:40%;background:linear-gradient(180deg,var(--violet),rgba(124,58,237,0.3));"></div>
+                  <span class="chart-label">S</span>
+                </div>
+              </div>
+
+              <div class="dashboard-ai-insight">
+                <span class="ai-insight-icon" aria-hidden="true">✨</span>
+                <div class="ai-insight-text">
+                  <strong>AI Insight:</strong> Training completion predicted to reach <strong>94.2%</strong> by end of
+                  Q3 — 18% above target. Recommend expanding to 3 new departments.
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating cards -->
+            <div class="hero-float-card hero-float-card-1" aria-hidden="true">
+              <div class="float-card-inner">
+                <span class="float-card-icon">🎯</span>
+                <div>
+                  <div class="float-card-label">AI Accuracy</div>
+                  <div class="float-card-value">98.7%</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-float-card hero-float-card-2" aria-hidden="true">
+              <div class="float-card-inner">
+                <span class="float-card-icon">⚡</span>
+                <div>
+                  <div class="float-card-label">Avg. Setup Time</div>
+                  <div class="float-card-value">4 min</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         STATS BAR
+    ═══════════════════════════════════════════════════ -->
+    <section class="stats-bar" aria-label="Key statistics">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item animate-on-scroll">
+            <span class="stat-value text-gradient" id="stat1">0</span>
+            <span class="stat-label">Enterprise Clients</span>
+          </div>
+          <div class="stat-item animate-on-scroll animate-delay-1">
+            <span class="stat-value" style="color:var(--cyan);" id="stat2">0M</span>
+            <span class="stat-label">AR Sessions Delivered</span>
+          </div>
+          <div class="stat-item animate-on-scroll animate-delay-2">
+            <span class="stat-value" style="color:var(--emerald);" id="stat3">0%</span>
+            <span class="stat-label">Customer Satisfaction</span>
+          </div>
+          <div class="stat-item animate-on-scroll animate-delay-3">
+            <span class="stat-value text-gradient" id="stat4">0x</span>
+            <span class="stat-label">Faster Training Completion</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         INTEGRATIONS MARQUEE
+    ═══════════════════════════════════════════════════ -->
+    <section class="integrations" aria-label="Platform integrations">
+      <div class="integrations-label">Integrates seamlessly with your existing stack</div>
+      <div style="overflow:hidden;">
+        <div class="marquee-track" id="marqueeTrack" aria-hidden="true">
+          <div class="integration-chip"><span class="chip-icon">☁️</span> Salesforce</div>
+          <div class="integration-chip"><span class="chip-icon">🔷</span> Microsoft Teams</div>
+          <div class="integration-chip"><span class="chip-icon">🟢</span> SAP</div>
+          <div class="integration-chip"><span class="chip-icon">📊</span> Tableau</div>
+          <div class="integration-chip"><span class="chip-icon">🔐</span> Okta SSO</div>
+          <div class="integration-chip"><span class="chip-icon">🏗️</span> ServiceNow</div>
+          <div class="integration-chip"><span class="chip-icon">🧩</span> Workday</div>
+          <div class="integration-chip"><span class="chip-icon">📱</span> iOS / Android</div>
+          <div class="integration-chip"><span class="chip-icon">🥽</span> Meta Quest</div>
+          <div class="integration-chip"><span class="chip-icon">🕶️</span> HoloLens 2</div>
+          <div class="integration-chip"><span class="chip-icon">📡</span> REST / GraphQL API</div>
+          <div class="integration-chip"><span class="chip-icon">🔗</span> Webhooks</div>
+          <!-- Duplicate for infinite scroll -->
+          <div class="integration-chip"><span class="chip-icon">☁️</span> Salesforce</div>
+          <div class="integration-chip"><span class="chip-icon">🔷</span> Microsoft Teams</div>
+          <div class="integration-chip"><span class="chip-icon">🟢</span> SAP</div>
+          <div class="integration-chip"><span class="chip-icon">📊</span> Tableau</div>
+          <div class="integration-chip"><span class="chip-icon">🔐</span> Okta SSO</div>
+          <div class="integration-chip"><span class="chip-icon">🏗️</span> ServiceNow</div>
+          <div class="integration-chip"><span class="chip-icon">🧩</span> Workday</div>
+          <div class="integration-chip"><span class="chip-icon">📱</span> iOS / Android</div>
+          <div class="integration-chip"><span class="chip-icon">🥽</span> Meta Quest</div>
+          <div class="integration-chip"><span class="chip-icon">🕶️</span> HoloLens 2</div>
+          <div class="integration-chip"><span class="chip-icon">📡</span> REST / GraphQL API</div>
+          <div class="integration-chip"><span class="chip-icon">🔗</span> Webhooks</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         AI PRODUCTS / SOLUTIONS
+    ═══════════════════════════════════════════════════ -->
+    <section class="section products" id="products">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <div>
+            <div class="section-eyebrow">AI-Powered Products</div>
+            <h2 class="section-title">Six intelligent tools.<br /><span class="text-gradient">One unified
+                platform.</span></h2>
+            <p class="section-subtitle">Every Hollomind product is built on a foundation of AI/ML — so your enterprise
+              doesn't just see the world differently, it understands it.</p>
+          </div>
+          <div class="section-header-right">
+            <a href="#cta" class="btn btn-secondary" id="viewAllProducts">View all products →</a>
+          </div>
+        </div>
+
+        <div class="products-grid">
+          <!-- Featured Product: AR Vision AI -->
+          <article class="product-card featured animate-on-scroll" id="productVisionAI"
+            style="--card-accent: linear-gradient(90deg, var(--violet), var(--cyan));"
+            aria-label="AR Vision AI product">
+            <div class="product-content">
+              <div>
+                <div class="product-icon-wrap"
+                  style="background:rgba(124,58,237,0.15);--icon-from:#7C3AED;--icon-to:#06B6D4;">🧠</div>
+                <div class="product-badge">
+                  <span class="badge badge-violet">⭐ Most Popular</span>
+                </div>
+                <h3 class="product-name">AR Vision AI</h3>
+                <p class="product-desc">Enterprise-grade computer vision powered by our proprietary NexVision model.
+                  Detects, maps, and understands physical environments in real-time with millimeter precision.</p>
+                <div class="product-features">
+                  <div class="product-feature">Real-time 3D spatial mapping</div>
+                  <div class="product-feature">Object & surface recognition (2,800+ classes)</div>
+                  <div class="product-feature">Edge AI — works offline</div>
+                  <div class="product-feature">99.1% detection accuracy</div>
+                </div>
+                <a href="#cta" class="product-link" id="visionAILearnMore">
+                  Learn more <span class="product-link-arrow">→</span>
+                </a>
+              </div>
+              <div class="product-visual" aria-label="AR Vision AI visualization">
+                <div style="text-align:center;padding:20px 0;">
+                  <div style="font-size:4rem;margin-bottom:12px;animation:orb-float 4s ease-in-out infinite;">🎯</div>
+                  <div style="font-size:0.8rem;color:var(--text-muted);margin-bottom:8px;">Object Detection Confidence
+                  </div>
+                  <div style="font-size:2rem;font-weight:800;font-family:var(--font-display);" class="text-gradient">
+                    99.1%</div>
+                  <div style="height:6px;background:var(--border);border-radius:3px;margin-top:12px;overflow:hidden;">
+                    <div
+                      style="width:99.1%;height:100%;background:linear-gradient(90deg,var(--violet),var(--cyan));border-radius:3px;animation:bar-fill 2s ease;">
+                    </div>
+                  </div>
+                  <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:16px;">
+                    <div
+                      style="background:rgba(124,58,237,0.08);border:1px solid var(--border);border-radius:8px;padding:10px;text-align:center;">
+                      <div style="font-size:0.65rem;color:var(--text-muted);margin-bottom:2px;">Latency</div>
+                      <div style="font-weight:700;color:var(--cyan);font-size:0.95rem;">&lt; 12ms</div>
+                    </div>
+                    <div
+                      style="background:rgba(6,182,212,0.08);border:1px solid var(--border);border-radius:8px;padding:10px;text-align:center;">
+                      <div style="font-size:0.65rem;color:var(--text-muted);margin-bottom:2px;">FPS</div>
+                      <div style="font-weight:700;color:var(--violet-light);font-size:0.95rem;">60 FPS</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- SmartTrain AR -->
+          <article class="product-card animate-on-scroll animate-delay-1" id="productSmartTrain"
+            aria-label="SmartTrain AR product">
+            <div class="product-icon-wrap"
+              style="background:rgba(6,182,212,0.12);--icon-from:#06B6D4;--icon-to:#10B981;">🎓</div>
+            <div class="product-badge"><span class="badge badge-cyan">AI Adaptive</span></div>
+            <h3 class="product-name">SmartTrain AR</h3>
+            <p class="product-desc">Transform employee onboarding and upskilling with AI-adaptive AR simulations. The
+              system learns from each trainee and dynamically adjusts difficulty, pacing, and content.</p>
+            <div class="product-features">
+              <div class="product-feature">Personalized learning paths via ML</div>
+              <div class="product-feature">Real-world simulation overlays</div>
+              <div class="product-feature">Performance gap detection</div>
+            </div>
+            <a href="#cta" class="product-link" id="smartTrainLearnMore">Learn more <span
+                class="product-link-arrow">→</span></a>
+          </article>
+
+          <!-- Analytics Engine -->
+          <article class="product-card animate-on-scroll animate-delay-2" id="productAnalytics"
+            aria-label="AR Analytics Engine product">
+            <div class="product-icon-wrap"
+              style="background:rgba(16,185,129,0.12);--icon-from:#10B981;--icon-to:#06B6D4;">📊</div>
+            <div class="product-badge"><span class="badge badge-emerald">Real-time</span></div>
+            <h3 class="product-name">AR Analytics Engine</h3>
+            <p class="product-desc">ML-powered behavioral analytics that reveal how your teams interact with AR content.
+              Surface ROI metrics, bottlenecks, and predictive insights automatically.</p>
+            <div class="product-features">
+              <div class="product-feature">Heatmaps of AR gaze & interaction</div>
+              <div class="product-feature">Predictive ROI modeling</div>
+              <div class="product-feature">Custom KPI dashboards</div>
+            </div>
+            <a href="#cta" class="product-link" id="analyticsLearnMore">Learn more <span
+                class="product-link-arrow">→</span></a>
+          </article>
+
+          <!-- Hollomind Studio -->
+          <article class="product-card animate-on-scroll animate-delay-3" id="productStudio"
+            aria-label="Hollomind Studio product">
+            <div class="product-icon-wrap"
+              style="background:rgba(236,72,153,0.12);--icon-from:#EC4899;--icon-to:#7C3AED;">🎨</div>
+            <div class="product-badge"><span class="badge badge-violet">No-Code</span></div>
+            <h3 class="product-name">Hollomind Studio</h3>
+            <p class="product-desc">A drag-and-drop AR content builder supercharged by generative AI. Create immersive
+              3D experiences, interactive guides, and spatial content without writing a line of code.</p>
+            <div class="product-features">
+              <div class="product-feature">AI 3D asset generation</div>
+              <div class="product-feature">Publish to all AR devices instantly</div>
+              <div class="product-feature">500+ enterprise templates</div>
+            </div>
+            <a href="#cta" class="product-link" id="studioLearnMore">Learn more <span
+                class="product-link-arrow">→</span></a>
+          </article>
+
+          <!-- HoloCollab -->
+          <article class="product-card animate-on-scroll animate-delay-4" id="productHoloCollab"
+            aria-label="HoloCollab product">
+            <div class="product-icon-wrap"
+              style="background:rgba(251,191,36,0.12);--icon-from:#F59E0B;--icon-to:#EC4899;">🤝</div>
+            <div class="product-badge"><span class="badge badge-cyan">Real-time Collab</span></div>
+            <h3 class="product-name">HoloCollab</h3>
+            <p class="product-desc">Bring distributed teams into the same physical or virtual space. Multi-user AR
+              sessions with spatial audio, holographic annotations, and AI meeting summaries.</p>
+            <div class="product-features">
+              <div class="product-feature">Up to 50 concurrent AR users</div>
+              <div class="product-feature">AI-powered meeting notes</div>
+              <div class="product-feature">Works on any AR device or phone</div>
+            </div>
+            <a href="#cta" class="product-link" id="holoCollabLearnMore">Learn more <span
+                class="product-link-arrow">→</span></a>
+          </article>
+
+          <!-- AR Predict -->
+          <article class="product-card animate-on-scroll animate-delay-5" id="productARPredict"
+            aria-label="AR Predict product">
+            <div class="product-icon-wrap"
+              style="background:rgba(239,68,68,0.12);--icon-from:#EF4444;--icon-to:#F59E0B;">⚙️</div>
+            <div class="product-badge"><span class="badge badge-emerald">Industrial IoT</span></div>
+            <h3 class="product-name">AR Predict</h3>
+            <p class="product-desc">Predictive maintenance meets augmented reality. Our ML models analyze IoT sensor
+              data and overlay real-time fault predictions directly onto physical machinery.</p>
+            <div class="product-features">
+              <div class="product-feature">Integrates with 200+ IoT platforms</div>
+              <div class="product-feature">Predictive failure detection (72hr ahead)</div>
+              <div class="product-feature">Step-by-step AR repair guides</div>
+            </div>
+            <a href="#cta" class="product-link" id="predictLearnMore">Learn more <span
+                class="product-link-arrow">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         PLATFORM FEATURES
+    ═══════════════════════════════════════════════════ -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-eyebrow animate-on-scroll">Enterprise Platform</div>
+        <div class="features-grid animate-on-scroll">
+          <div>
+            <h2 class="section-title" style="margin-bottom:12px;">Everything you need.<br /><span
+                class="text-gradient">Nothing you don't.</span></h2>
+            <p class="section-subtitle" style="margin-bottom:40px;">Built for enterprise security, scale, and compliance
+              from day one.</p>
+
+            <div class="features-list">
+              <div class="feature-item active" id="feat1" data-feature="1" tabindex="0" role="button"
+                aria-pressed="true">
+                <div class="feature-icon" style="background:rgba(124,58,237,0.15);" aria-hidden="true">🔐</div>
+                <div class="feature-text">
+                  <div class="feature-title">Enterprise-Grade Security</div>
+                  <div class="feature-desc">SOC 2 Type II, ISO 27001, GDPR compliant. SSO/SAML, RBAC, end-to-end
+                    encryption, and private cloud deployment options.</div>
+                </div>
+              </div>
+              <div class="feature-item" id="feat2" data-feature="2" tabindex="0" role="button" aria-pressed="false">
+                <div class="feature-icon" style="background:rgba(6,182,212,0.15);" aria-hidden="true">📈</div>
+                <div class="feature-text">
+                  <div class="feature-title">Scalable Infrastructure</div>
+                  <div class="feature-desc">Auto-scaling infrastructure handles from 10 to 100,000 concurrent users.
+                    99.99% uptime SLA with global CDN coverage across 42 regions.</div>
+                </div>
+              </div>
+              <div class="feature-item" id="feat3" data-feature="3" tabindex="0" role="button" aria-pressed="false">
+                <div class="feature-icon" style="background:rgba(16,185,129,0.15);" aria-hidden="true">🔌</div>
+                <div class="feature-text">
+                  <div class="feature-title">Deep Integrations & API</div>
+                  <div class="feature-desc">REST and GraphQL APIs with comprehensive SDKs for iOS, Android, and web.
+                    150+ native connectors for popular enterprise tools.</div>
+                </div>
+              </div>
+              <div class="feature-item" id="feat4" data-feature="4" tabindex="0" role="button" aria-pressed="false">
+                <div class="feature-icon" style="background:rgba(236,72,153,0.15);" aria-hidden="true">🎨</div>
+                <div class="feature-text">
+                  <div class="feature-title">White-Label Ready</div>
+                  <div class="feature-desc">Deploy Hollomind under your brand. Custom domains, your logo, your colors —
+                    complete white-labeling with dedicated client environments.</div>
+                </div>
+              </div>
+              <div class="feature-item" id="feat5" data-feature="5" tabindex="0" role="button" aria-pressed="false">
+                <div class="feature-icon" style="background:rgba(251,191,36,0.15);" aria-hidden="true">🤖</div>
+                <div class="feature-text">
+                  <div class="feature-title">AI Automation Engine</div>
+                  <div class="feature-desc">Automate repetitive workflows with AI. Smart content recommendations,
+                    auto-generated reports, and predictive user journey optimization.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feature Preview Panel -->
+          <div class="features-preview" aria-label="Feature visualization">
+            <div class="features-mock">
+              <div class="mock-topbar">
+                <div class="dashboard-dots" aria-hidden="true">
+                  <span class="dot-red"></span><span class="dot-yellow"></span><span class="dot-green"></span>
+                </div>
+                <span class="mock-topbar-title">HOLLOMIND ENTERPRISE DASHBOARD</span>
+              </div>
+              <div class="mock-body">
+                <div class="mock-analytics-grid">
+                  <div class="mock-analytic-card">
+                    <div class="mock-analytic-label">Security Score</div>
+                    <div class="mock-analytic-value text-gradient">A+</div>
+                    <div class="mock-analytic-bar">
+                      <div class="mock-analytic-bar-fill"
+                        style="width:98%;background:linear-gradient(90deg,var(--violet),var(--cyan));"></div>
+                    </div>
+                  </div>
+                  <div class="mock-analytic-card">
+                    <div class="mock-analytic-label">Uptime (30d)</div>
+                    <div class="mock-analytic-value" style="color:var(--emerald);">99.99%</div>
+                    <div class="mock-analytic-bar">
+                      <div class="mock-analytic-bar-fill"
+                        style="width:99.99%;background:linear-gradient(90deg,var(--emerald),#06B6D4);"></div>
+                    </div>
+                  </div>
+                  <div class="mock-analytic-card">
+                    <div class="mock-analytic-label">API Calls (today)</div>
+                    <div class="mock-analytic-value" style="color:var(--cyan);">2.4M</div>
+                    <div class="mock-analytic-bar">
+                      <div class="mock-analytic-bar-fill"
+                        style="width:72%;background:linear-gradient(90deg,var(--cyan),var(--violet));"></div>
+                    </div>
+                  </div>
+                  <div class="mock-analytic-card">
+                    <div class="mock-analytic-label">Active Users</div>
+                    <div class="mock-analytic-value" style="color:var(--violet-light);">18,432</div>
+                    <div class="mock-analytic-bar">
+                      <div class="mock-analytic-bar-fill"
+                        style="width:85%;background:linear-gradient(90deg,var(--violet),var(--pink));"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mock-chart" aria-label="Performance trend chart">
+                  <svg class="mock-line-chart" viewBox="0 0 300 70" preserveAspectRatio="none" aria-hidden="true">
+                    <defs>
+                      <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.4" />
+                        <stop offset="100%" stop-color="#7C3AED" stop-opacity="0" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      d="M0 60 C30 50, 60 45, 90 35 C120 25, 150 30, 180 20 C210 10, 240 15, 270 8 C280 5, 290 4, 300 2"
+                      fill="none" stroke="url(#lineGrad)" stroke-width="2.5" />
+                    <linearGradient id="lineGrad" x1="0" y1="0" x2="1" y2="0">
+                      <stop offset="0%" stop-color="#7C3AED" />
+                      <stop offset="100%" stop-color="#06B6D4" />
+                    </linearGradient>
+                    <path
+                      d="M0 60 C30 50, 60 45, 90 35 C120 25, 150 30, 180 20 C210 10, 240 15, 270 8 C280 5, 290 4, 300 2 L300 70 L0 70 Z"
+                      fill="url(#chartGrad)" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         HOW IT WORKS
+    ═══════════════════════════════════════════════════ -->
+    <section class="section hiw" id="how-it-works">
+      <div class="container">
+        <div class="hiw-header animate-on-scroll">
+          <div class="section-eyebrow" style="justify-content:center;">Simple by Design</div>
+          <h2 class="section-title">Up and running in <span class="text-gradient">under a day</span></h2>
+          <p class="section-subtitle">Hollomind's enterprise onboarding is engineered to be fast, painless, and
+            supported every step of the way.</p>
+        </div>
+
+        <div class="hiw-steps">
+          <div class="hiw-step animate-on-scroll animate-delay-1" id="hiwStep1">
+            <div class="hiw-step-number" aria-hidden="true">1</div>
+            <div class="hiw-step-icon" aria-hidden="true">🏗️</div>
+            <h3 class="hiw-step-title">Connect Your Stack</h3>
+            <p class="hiw-step-desc">Link Hollomind to your existing tools in minutes using our library of 150+
+              pre-built connectors. SSO, HR systems, CRM — it all just works.</p>
+          </div>
+          <div class="hiw-step animate-on-scroll animate-delay-2" id="hiwStep2">
+            <div class="hiw-step-number" aria-hidden="true">2</div>
+            <div class="hiw-step-icon" aria-hidden="true">⚙️</div>
+            <h3 class="hiw-step-title">Configure with AI</h3>
+            <p class="hiw-step-desc">Describe your use case in plain language. Our AI Config Engine auto-generates AR
+              workflows, training modules, and analytics dashboards tailored to your industry.</p>
+          </div>
+          <div class="hiw-step animate-on-scroll animate-delay-3" id="hiwStep3">
+            <div class="hiw-step-number" aria-hidden="true">3</div>
+            <div class="hiw-step-icon" aria-hidden="true">🚀</div>
+            <h3 class="hiw-step-title">Deploy & Scale</h3>
+            <p class="hiw-step-desc">Roll out to your entire team with one click. Hollomind handles device management,
+              content delivery, and real-time monitoring while your CSM tracks ROI.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         PRICING
+    ═══════════════════════════════════════════════════ -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="pricing-header animate-on-scroll">
+          <div class="section-eyebrow" style="justify-content:center;">Transparent Pricing</div>
+          <h2 class="section-title"><span class="text-gradient">Simple, scalable</span> pricing.</h2>
+          <p class="section-subtitle">No surprises. No hidden fees. Scale from a pilot team to company-wide deployment.
+          </p>
+          <div class="pricing-toggle" id="pricingToggle">
+            <span>Monthly</span>
+            <div class="toggle-switch" id="toggleSwitch" role="switch" aria-checked="false" tabindex="0"
+              aria-label="Toggle annual billing"></div>
+            <span>Annual</span>
+            <span class="pricing-save-badge">Save 25%</span>
+          </div>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Starter -->
+          <div class="pricing-card animate-on-scroll animate-delay-1" id="pricingStarter">
+            <div class="pricing-plan-name">Starter</div>
+            <div class="pricing-price-block">
+              <div class="pricing-price" id="priceStarter"><sup>$</sup><span data-monthly="499"
+                  data-annual="374">499</span></div>
+            </div>
+            <div class="pricing-period" id="periodStarter">per month · billed monthly</div>
+            <div class="pricing-desc">Perfect for pilot programs and small teams exploring enterprise AR for the first
+              time.</div>
+            <div class="pricing-features">
+              <div class="pricing-feature">
+                <div class="pricing-feature-check">✓</div>Up to 25 seats
+              </div>
+              <div class="pricing-feature">
+                <div class="pricing-feature-check">✓</div>SmartTrain AR (5 modules)
+              </div>
+              <div class="pricing-feature">
+                <div class="pricing-feature-check">✓</div>AR Analytics Engine (basic)
+              </div>
+              <div class="pricing-feature">
+                <div class="pricing-feature-check">✓</div>5,000 AR sessions/mo
+              </div>
+              <div class="pricing-feature">
+                <div class="pricing-feature-check">✓</div>Email & chat support
+              </div>
+              <div class="pricing-feature">
+                <div class="pricing-feature-check">✓</div>iOS & Android apps
+              </div>
+              <div class="pricing-feature">
+                <div class="pricing-feature-check muted">—</div><span style="opacity:0.5;">AR Vision AI</span>
+              </div>
+              <div class="pricing-feature">
+                <div class="pricing-feature-check muted">—</div><span style="opacity:0.5;">White-label</span>
+              </div>
+            </div>
+            <a href="#cta" class="btn btn-secondary" style="width:100%;justify-content:center;" id="startStarter">Start
+              Free Trial</a>
+          </div>
+
+          <!-- Growth (Popular) -->
+          <div class="pricing-card popular animate-on-scroll animate-delay-2" id="pricingGrowth">
+            <div class="popular-badge" aria-label="Most popular plan">Most Popular</div>
+            <div class="pricing-plan-name">Growth</div>
+            <div class="pricing-price-block">
+              <div class="pricing-price" id="priceGrowth"><sup>$</sup><span data-monthly="1299"
+                  data-annual="974">1,299</span></div>
+            </div>
+            <div class="pricing-period" id="periodGrowth">per month · billed monthly</div>
+            <div class="pricing-desc">For scaling teams that need the full AI suite, deep integrations, and dedicated
+              support.</div>
+            <div class="pricing-features">
+              <div class="pricing-feature">
+                <div class="pricing-feature-check">✓</div>Up to 200 seats
+              </div>
+              <div class="pricing-feature">
+                <div class="pricing-feature-check">✓</div>All 6 Hollomind products
+              </div>
+              <div class="pricing-feature">
+                <div class="pricing-feature-check">✓</div>Unlimited AR sessions
+              </div>
+              <div class="pricing-feature">
+                <div class="pricing-feature-check">✓</div>Advanced analytics & reporting
+              </div>
+              <div class="pricing-feature">
+                <div class="pricing-feature-check">✓</div>SSO / SAML integration
+              </div>
+              <div class="pricing-feature">
+                <div class="pricing-feature-check">✓</div>Dedicated Customer Success Manager
+              </div>
+              <div class="pricing-feature">
+                <div class="pricing-feature-check">✓</div>99.9% uptime SLA
+              </div>
+              <div class="pricing-feature">
+                <div class="pricing-feature-check muted">—</div><span style="opacity:0.5;">White-label / custom
+                  domain</span>
+              </div>
+            </div>
+            <a href="#cta" class="btn btn-primary" style="width:100%;justify-content:center;" id="startGrowth">Get
+              Started →</a>
+          </div>
+
+          <!-- Enterprise -->
+          <div class="pricing-card animate-on-scroll animate-delay-3" id="pricingEnterprise">
+            <div class="pricing-plan-name">Enterprise</div>
+            <div class="pricing-price-block">
+              <div class="pricing-price" style="font-size:2.2rem;padding-top:6px;" id="priceEnterprise">Custom</div>
+            </div>
+            <div class="pricing-period" id="periodEnterprise">tailored to your organization</div>
+            <div class="pricing-desc">Full-platform access with white-labeling, on-premise deployment, and custom SLAs
+              for large enterprises.</div>
+            <div class="pricing-features">
+              <div class="pricing-feature">
+                <div class="pricing-feature-check">✓</div>Unlimited seats
+              </div>
+              <div class="pricing-feature">
+                <div class="pricing-feature-check">✓</div>All 6 products + early access
+              </div>
+              <div class="pricing-feature">
+                <div class="pricing-feature-check">✓</div>White-label & custom domain
+              </div>
+              <div class="pricing-feature">
+                <div class="pricing-feature-check">✓</div>On-premise / private cloud
+              </div>
+              <div class="pricing-feature">
+                <div class="pricing-feature-check">✓</div>Custom AI model fine-tuning
+              </div>
+              <div class="pricing-feature">
+                <div class="pricing-feature-check">✓</div>99.99% uptime SLA
+              </div>
+              <div class="pricing-feature">
+                <div class="pricing-feature-check">✓</div>24/7 dedicated support line
+              </div>
+              <div class="pricing-feature">
+                <div class="pricing-feature-check">✓</div>SOC 2, HIPAA, ISO 27001
+              </div>
+            </div>
+            <a href="#cta" class="btn btn-secondary" style="width:100%;justify-content:center;"
+              id="startEnterprise">Talk to Sales →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         TESTIMONIALS
+    ═══════════════════════════════════════════════════ -->
+    <section class="section testimonials" id="testimonials">
+      <div class="container">
+        <div class="testimonials-header animate-on-scroll">
+          <div class="section-eyebrow" style="justify-content:center;">Customer Stories</div>
+          <h2 class="section-title">Trusted by <span class="text-gradient">industry leaders</span></h2>
+          <p class="section-subtitle">See how the world's most forward-thinking enterprises use Hollomind to transform
+            their operations.</p>
+        </div>
+
+        <div class="testimonials-carousel">
+          <div class="testimonial-card animate-on-scroll animate-delay-1" id="testi1">
+            <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+            <p class="testimonial-quote">Hollomind's SmartTrain platform cut our onboarding time by 62%. New technicians
+              are field-ready in 3 days instead of 2 weeks, and defect rates dropped by 40%. This is the future of
+              workforce development.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background:linear-gradient(135deg,#7C3AED,#06B6D4);" aria-hidden="true">
+                MJ</div>
+              <div class="author-info">
+                <div class="author-name">Marcus Johnson</div>
+                <div class="author-role">VP of Operations</div>
+                <div class="author-company">Siemens Energy Americas</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card animate-on-scroll animate-delay-2" id="testi2">
+            <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+            <p class="testimonial-quote">The AR Analytics Engine is like having a data scientist embedded in every AR
+              session. We finally understand exactly where learners struggle and can intervene before issues compound.
+              ROI was clear within 6 weeks.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background:linear-gradient(135deg,#EC4899,#7C3AED);" aria-hidden="true">
+                PL</div>
+              <div class="author-info">
+                <div class="author-name">Priya Lalwani</div>
+                <div class="author-role">Head of L&D</div>
+                <div class="author-company">Unilever Global</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card animate-on-scroll animate-delay-3" id="testi3">
+            <div class="testimonial-stars" aria-label="5 stars">★★★★★</div>
+            <p class="testimonial-quote">AR Predict has been a game-changer for our plants. We've reduced unplanned
+              downtime by 78% since deployment. The AI catches failure signatures 3 days before they become critical —
+              the ROI is extraordinary.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background:linear-gradient(135deg,#10B981,#06B6D4);" aria-hidden="true">
+                CW</div>
+              <div class="author-info">
+                <div class="author-name">Chen Wei</div>
+                <div class="author-role">Plant Director</div>
+                <div class="author-company">BASF Manufacturing APAC</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social proof bar -->
+        <div
+          style="margin-top:56px;text-align:center;padding:32px;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-xl);"
+          class="animate-on-scroll">
+          <div style="display:flex;justify-content:center;gap:48px;flex-wrap:wrap;"
+            aria-label="Awards and certifications">
+            <div style="text-align:center;">
+              <div style="font-size:1.6rem;margin-bottom:4px;" aria-hidden="true">🏆</div>
+              <div style="font-size:0.8rem;font-weight:700;color:var(--text-primary);">Gartner Cool Vendor</div>
+              <div style="font-size:0.72rem;color:var(--text-muted);">AR/VR 2025</div>
+            </div>
+            <div style="text-align:center;">
+              <div style="font-size:1.6rem;margin-bottom:4px;" aria-hidden="true">⭐</div>
+              <div style="font-size:0.8rem;font-weight:700;color:var(--text-primary);">G2 Leader</div>
+              <div style="font-size:0.72rem;color:var(--text-muted);">Enterprise AR 8 quarters</div>
+            </div>
+            <div style="text-align:center;">
+              <div style="font-size:1.6rem;margin-bottom:4px;" aria-hidden="true">🔐</div>
+              <div style="font-size:0.8rem;font-weight:700;color:var(--text-primary);">SOC 2 Type II</div>
+              <div style="font-size:0.72rem;color:var(--text-muted);">Certified & Audited</div>
+            </div>
+            <div style="text-align:center;">
+              <div style="font-size:1.6rem;margin-bottom:4px;" aria-hidden="true">📊</div>
+              <div style="font-size:0.8rem;font-weight:700;color:var(--text-primary);">4.9/5.0 Rating</div>
+              <div style="font-size:0.72rem;color:var(--text-muted);">From 1,200+ reviews</div>
+            </div>
+            <div style="text-align:center;">
+              <div style="font-size:1.6rem;margin-bottom:4px;" aria-hidden="true">🌍</div>
+              <div style="font-size:0.8rem;font-weight:700;color:var(--text-primary);">42 Countries</div>
+              <div style="font-size:0.72rem;color:var(--text-muted);">Global deployment</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         BLOG / RESOURCES
+    ═══════════════════════════════════════════════════ -->
+    <section class="section" id="resources">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <div>
+            <div class="section-eyebrow">Knowledge Hub</div>
+            <h2 class="section-title">Latest from the <span class="text-gradient">Hollomind blog</span></h2>
+          </div>
+          <div class="section-header-right">
+            <a href="#" class="btn btn-secondary" id="viewAllPosts">View all articles →</a>
+          </div>
+        </div>
+
+        <div class="blog-grid">
+          <article class="blog-card animate-on-scroll animate-delay-1" id="blog1"
+            aria-label="Blog post: ROI of AR training">
+            <div class="blog-card-image" style="--img-from:#1e1b4b;--img-to:#0e7490;" aria-hidden="true">📈</div>
+            <div class="blog-card-content">
+              <div class="blog-card-tags">
+                <span class="badge badge-violet">Research</span>
+                <span class="badge badge-cyan">ROI</span>
+              </div>
+              <h3 class="blog-card-title">The 2025 State of Enterprise AR: ROI Benchmarks Across 500 Deployments</h3>
+              <p class="blog-card-excerpt">We analyzed 500 enterprise AR deployments to understand what drives ROI. The
+                results challenge conventional wisdom about where AR delivers most value.</p>
+              <div class="blog-card-meta">
+                <span>June 28, 2025 · 8 min read</span>
+                <span style="color:var(--violet-light);">Read →</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-card animate-on-scroll animate-delay-2" id="blog2"
+            aria-label="Blog post: AI and augmented reality">
+            <div class="blog-card-image" style="--img-from:#064e3b;--img-to:#1e1b4b;" aria-hidden="true">🤖</div>
+            <div class="blog-card-content">
+              <div class="blog-card-tags">
+                <span class="badge badge-emerald">AI/ML</span>
+              </div>
+              <h3 class="blog-card-title">How GPT-4o Vision is Redefining What's Possible in Industrial AR</h3>
+              <p class="blog-card-excerpt">Large vision-language models are moving from labs to factory floors. Here's
+                what this shift means for enterprise AR and how to prepare your organization.</p>
+              <div class="blog-card-meta">
+                <span>June 15, 2025 · 6 min read</span>
+                <span style="color:var(--violet-light);">Read →</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="blog-card animate-on-scroll animate-delay-3" id="blog3"
+            aria-label="Blog post: Predictive maintenance with AR">
+            <div class="blog-card-image" style="--img-from:#451a03;--img-to:#1e1b4b;" aria-hidden="true">⚙️</div>
+            <div class="blog-card-content">
+              <div class="blog-card-tags">
+                <span class="badge badge-violet">Case Study</span>
+              </div>
+              <h3 class="blog-card-title">How BASF Reduced Unplanned Downtime by 78% with AR Predict</h3>
+              <p class="blog-card-excerpt">A deep-dive into BASF's 18-month deployment of AR-powered predictive
+                maintenance across 12 manufacturing facilities in the APAC region.</p>
+              <div class="blog-card-meta">
+                <span>June 3, 2025 · 10 min read</span>
+                <span style="color:var(--violet-light);">Read →</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         ABOUT US (NVIDIA & AWS TECH ALIGNMENT)
+    ═══════════════════════════════════════════════════ -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="about-grid animate-on-scroll">
+          <!-- Left Column: Vision & Mission -->
+          <div class="about-left">
+            <div class="section-eyebrow">Who We Are</div>
+            <h2 class="section-title">Augmenting reality,<br /><span class="text-gradient">amplifying
+                intelligence</span></h2>
+            <p class="about-paragraph">
+              Hollomind is a deep-tech spatial computing startup founded in 2024 by MIT and Microsoft computer vision
+              pioneers. We build the infrastructure layer for industrial and enterprise augmented reality, allowing
+              frontline workforces to access AI-driven spatial intelligence in real time.
+            </p>
+            <p class="about-paragraph">
+              Our mission is to eliminate cognitive friction on the factory floor, in the warehouse, and across utility
+              networks. By blending advanced machine learning models with spatial hardware, we convert standard
+              enterprise procedures into dynamic, context-aware interactive overlays.
+            </p>
+
+            <div class="about-badges">
+              <div class="about-badge-card">
+                <div class="about-badge-icon">🤖</div>
+                <div class="about-badge-title">Nvidia Inception</div>
+                <div class="about-badge-desc">Honored member pushing the envelope in edge AI and Tensor-accelerated
+                  vision model inference.</div>
+              </div>
+              <div class="about-badge-card">
+                <div class="about-badge-icon">☁️</div>
+                <div class="about-badge-title">AWS Activate Partner</div>
+                <div class="about-badge-desc">Architected for high-performance cloud clusters and low-latency
+                  distributed databases.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Technology Architecture & Infrastructure -->
+          <div class="about-right">
+            <div class="tech-spec-card">
+              <div class="tech-spec-header">
+                <span style="font-size:1.4rem;" aria-hidden="true">⚙️</span>
+                <span class="tech-spec-title">Nvidia &amp; AWS Core Alignment</span>
+              </div>
+
+              <div class="tech-stack-list">
+                <!-- Nvidia Column -->
+                <div class="tech-stack-category">
+                  <div class="tech-stack-cat-title">Nvidia Accelerated Compute Stack</div>
+                  <div class="tech-stack-item">
+                    <span class="tech-stack-icon" aria-hidden="true">⚡</span>
+                    <div>
+                      <div class="tech-stack-name">TensorRT &amp; Triton Inference</div>
+                      <div class="tech-stack-desc">Our NexVision core is compiled with TensorRT FP16 quantization,
+                        achieving sub-12ms local latency, deployed via Triton Inference Server.</div>
+                    </div>
+                  </div>
+                  <div class="tech-stack-item">
+                    <span class="tech-stack-icon" aria-hidden="true">🦾</span>
+                    <div>
+                      <div class="tech-stack-name">Nvidia Jetson &amp; Omniverse</div>
+                      <div class="tech-stack-desc">Field devices run edge-native spatial meshing on Jetson Orin modules,
+                        sync'd with Nvidia Omniverse for high-fidelity digital twin simulation.</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- AWS Column -->
+                <div class="tech-stack-category">
+                  <div class="tech-stack-cat-title">AWS Distributed Cloud Scaling</div>
+                  <div class="tech-stack-item">
+                    <span class="tech-stack-icon" aria-hidden="true">🚀</span>
+                    <div>
+                      <div class="tech-stack-name">Amazon EC2 G5 &amp; SageMaker</div>
+                      <div class="tech-stack-desc">Continuous pre-training and reinforcement learning pipeline built on
+                        EC2 G5/P4 instances, fully orchestrated by Amazon SageMaker.</div>
+                    </div>
+                  </div>
+                  <div class="tech-stack-item">
+                    <span class="tech-stack-icon" aria-hidden="true">📶</span>
+                    <div>
+                      <div class="tech-stack-name">AWS IoT Core &amp; DynamoDB</div>
+                      <div class="tech-stack-desc">IoT telemetry streams through AWS IoT Core at sub-second frequencies,
+                        cataloging telemetry to Amazon DynamoDB and spatial meshes to S3.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tech-spec-footer">
+                <span>SOC 2 Type II Certified</span> · <span>GDPR &amp; HIPAA Compliant</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         ROI CALCULATOR
+    ═══════════════════════════════════════════════════ -->
+    <section class="section roi-section" id="roi-calculator">
+      <div class="container">
+        <div class="roi-grid animate-on-scroll">
+          <!-- Left: Inputs -->
+          <div class="roi-left">
+            <div class="section-eyebrow">ROI Calculator</div>
+            <h2 class="section-title">See your <span class="text-gradient">return on investment</span></h2>
+            <p class="section-subtitle" style="margin-bottom:40px;">Adjust the sliders to estimate Hollomind's financial
+              impact on your organization.</p>
+
+            <div class="roi-inputs">
+              <div class="roi-slider-group" id="roiGroupEmployees">
+                <div class="roi-slider-header">
+                  <label class="roi-label" for="sliderEmployees">Number of Employees</label>
+                  <span class="roi-value-display" id="valEmployees">500</span>
+                </div>
+                <input type="range" class="roi-slider" id="sliderEmployees" min="10" max="5000" value="500" step="10"
+                  aria-label="Number of employees" />
+                <div class="roi-slider-ticks"><span>10</span><span>5,000</span></div>
+              </div>
+
+              <div class="roi-slider-group" id="roiGroupHours">
+                <div class="roi-slider-header">
+                  <label class="roi-label" for="sliderHours">Training Hours / Employee / Year</label>
+                  <span class="roi-value-display" id="valHours">40 hrs</span>
+                </div>
+                <input type="range" class="roi-slider" id="sliderHours" min="4" max="200" value="40" step="4"
+                  aria-label="Training hours per employee per year" />
+                <div class="roi-slider-ticks"><span>4</span><span>200</span></div>
+              </div>
+
+              <div class="roi-slider-group" id="roiGroupWage">
+                <div class="roi-slider-header">
+                  <label class="roi-label" for="sliderWage">Avg. Hourly Wage (USD)</label>
+                  <span class="roi-value-display" id="valWage">$45</span>
+                </div>
+                <input type="range" class="roi-slider" id="sliderWage" min="15" max="200" value="45" step="5"
+                  aria-label="Average hourly wage in USD" />
+                <div class="roi-slider-ticks"><span>$15</span><span>$200</span></div>
+              </div>
+
+              <div class="roi-slider-group" id="roiGroupDowntime">
+                <div class="roi-slider-header">
+                  <label class="roi-label" for="sliderDowntime">Annual Downtime Cost ($K)</label>
+                  <span class="roi-value-display" id="valDowntime">$500K</span>
+                </div>
+                <input type="range" class="roi-slider" id="sliderDowntime" min="50" max="10000" value="500" step="50"
+                  aria-label="Annual downtime cost in thousands USD" />
+                <div class="roi-slider-ticks"><span>$50K</span><span>$10M</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Results -->
+          <div class="roi-right">
+            <div class="roi-results-card">
+              <div class="roi-results-header">
+                <span class="roi-results-icon" aria-hidden="true">✨</span>
+                <span class="roi-results-title">Your Estimated Annual ROI</span>
+              </div>
+
+              <div class="roi-big-number">
+                <span class="roi-currency">$</span>
+                <span class="roi-amount" id="roiAmount">0</span>
+                <span class="roi-unit">saved / yr</span>
+              </div>
+
+              <div class="roi-breakdown">
+                <div class="roi-breakdown-item">
+                  <div class="roi-breakdown-label">
+                    <span class="roi-breakdown-dot" style="background:var(--violet);"></span>
+                    Training Efficiency Gains
+                  </div>
+                  <div class="roi-breakdown-value" id="roiTraining">—</div>
+                </div>
+                <div class="roi-breakdown-item">
+                  <div class="roi-breakdown-label">
+                    <span class="roi-breakdown-dot" style="background:var(--cyan);"></span>
+                    Reduced Error &amp; Rework Costs
+                  </div>
+                  <div class="roi-breakdown-value" id="roiErrors">—</div>
+                </div>
+                <div class="roi-breakdown-item">
+                  <div class="roi-breakdown-label">
+                    <span class="roi-breakdown-dot" style="background:var(--emerald);"></span>
+                    Downtime Reduction (AR Predict)
+                  </div>
+                  <div class="roi-breakdown-value" id="roiDowntime">—</div>
+                </div>
+                <div class="roi-breakdown-item">
+                  <div class="roi-breakdown-label">
+                    <span class="roi-breakdown-dot" style="background:var(--pink);"></span>
+                    Productivity &amp; Collaboration
+                  </div>
+                  <div class="roi-breakdown-value" id="roiProductivity">—</div>
+                </div>
+              </div>
+
+              <div class="roi-chart-wrap" aria-label="ROI breakdown bar chart">
+                <div class="roi-bar-chart" id="roiBarChart">
+                  <div class="roi-bar-row">
+                    <div class="roi-bar-label">Training</div>
+                    <div class="roi-bar-track">
+                      <div class="roi-bar-fill" id="barTraining" style="background:var(--violet);"></div>
+                    </div>
+                  </div>
+                  <div class="roi-bar-row">
+                    <div class="roi-bar-label">Errors</div>
+                    <div class="roi-bar-track">
+                      <div class="roi-bar-fill" id="barErrors" style="background:var(--cyan);"></div>
+                    </div>
+                  </div>
+                  <div class="roi-bar-row">
+                    <div class="roi-bar-label">Downtime</div>
+                    <div class="roi-bar-track">
+                      <div class="roi-bar-fill" id="barDowntime" style="background:var(--emerald);"></div>
+                    </div>
+                  </div>
+                  <div class="roi-bar-row">
+                    <div class="roi-bar-label">Productivity</div>
+                    <div class="roi-bar-track">
+                      <div class="roi-bar-fill" id="barProductivity" style="background:var(--pink);"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="roi-payback">
+                <div class="roi-payback-item">
+                  <div class="roi-payback-label">Est. Payback Period</div>
+                  <div class="roi-payback-value" id="roiPayback">—</div>
+                </div>
+                <div class="roi-payback-item">
+                  <div class="roi-payback-label">3-Year ROI Multiple</div>
+                  <div class="roi-payback-value" id="roi3yr">—</div>
+                </div>
+              </div>
+
+              <a href="#cta" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:20px;"
+                id="roiGetStarted">Get Your Full ROI Report →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         COMPETITOR COMPARISON TABLE
+    ═══════════════════════════════════════════════════ -->
+    <section class="section comparison-section" id="comparison">
+      <div class="container">
+        <div class="text-center animate-on-scroll" style="margin-bottom:56px;">
+          <div class="section-eyebrow" style="justify-content:center;">Why Hollomind</div>
+          <h2 class="section-title">How we stack up against <span class="text-gradient">the competition</span></h2>
+          <p class="section-subtitle" style="margin:0 auto;">See why 2,400+ enterprises chose Hollomind over the
+            alternatives.</p>
+        </div>
+
+        <div class="comparison-wrap animate-on-scroll">
+          <div class="comparison-table" role="table" aria-label="Feature comparison table">
+            <!-- Header -->
+            <div class="comparison-header" role="row">
+              <div class="comp-col comp-feature-col" role="columnheader">Feature</div>
+              <div class="comp-col comp-hollomind" role="columnheader">
+                <div class="comp-brand-logo">◈ Hollomind</div>
+                <div class="comp-brand-sub">AI-First Platform</div>
+              </div>
+              <div class="comp-col" role="columnheader">
+                <div class="comp-brand-logo comp-competitor">upsmind</div>
+                <div class="comp-brand-sub">AR Training</div>
+              </div>
+              <div class="comp-col" role="columnheader">
+                <div class="comp-brand-logo comp-competitor">PTC Vuforia</div>
+                <div class="comp-brand-sub">Industrial AR</div>
+              </div>
+              <div class="comp-col" role="columnheader">
+                <div class="comp-brand-logo comp-competitor">Scope AR</div>
+                <div class="comp-brand-sub">Workforce AR</div>
+              </div>
+            </div>
+
+            <!-- Rows -->
+            <div class="comparison-row" role="row">
+              <div class="comp-col comp-feature-col" role="cell">AI/ML at Core</div>
+              <div class="comp-col comp-hollomind" role="cell"><span class="comp-check">✓</span></div>
+              <div class="comp-col" role="cell"><span class="comp-cross">✗</span></div>
+              <div class="comp-col" role="cell"><span class="comp-partial">◐</span></div>
+              <div class="comp-col" role="cell"><span class="comp-cross">✗</span></div>
+            </div>
+            <div class="comparison-row" role="row">
+              <div class="comp-col comp-feature-col" role="cell">No-Code AR Builder</div>
+              <div class="comp-col comp-hollomind" role="cell"><span class="comp-check">✓</span></div>
+              <div class="comp-col" role="cell"><span class="comp-cross">✗</span></div>
+              <div class="comp-col" role="cell"><span class="comp-partial">◐</span></div>
+              <div class="comp-col" role="cell"><span class="comp-check">✓</span></div>
+            </div>
+            <div class="comparison-row" role="row">
+              <div class="comp-col comp-feature-col" role="cell">Predictive Maintenance AR</div>
+              <div class="comp-col comp-hollomind" role="cell"><span class="comp-check">✓</span></div>
+              <div class="comp-col" role="cell"><span class="comp-cross">✗</span></div>
+              <div class="comp-col" role="cell"><span class="comp-check">✓</span></div>
+              <div class="comp-col" role="cell"><span class="comp-cross">✗</span></div>
+            </div>
+            <div class="comparison-row" role="row">
+              <div class="comp-col comp-feature-col" role="cell">Real-time Analytics Dashboard</div>
+              <div class="comp-col comp-hollomind" role="cell"><span class="comp-check">✓</span></div>
+              <div class="comp-col" role="cell"><span class="comp-cross">✗</span></div>
+              <div class="comp-col" role="cell"><span class="comp-partial">◐</span></div>
+              <div class="comp-col" role="cell"><span class="comp-partial">◐</span></div>
+            </div>
+            <div class="comparison-row" role="row">
+              <div class="comp-col comp-feature-col" role="cell">Multi-user AR Collaboration</div>
+              <div class="comp-col comp-hollomind" role="cell"><span class="comp-check">✓</span></div>
+              <div class="comp-col" role="cell"><span class="comp-cross">✗</span></div>
+              <div class="comp-col" role="cell"><span class="comp-partial">◐</span></div>
+              <div class="comp-col" role="cell"><span class="comp-check">✓</span></div>
+            </div>
+            <div class="comparison-row" role="row">
+              <div class="comp-col comp-feature-col" role="cell">SSO / SAML / SCIM</div>
+              <div class="comp-col comp-hollomind" role="cell"><span class="comp-check">✓</span></div>
+              <div class="comp-col" role="cell"><span class="comp-cross">✗</span></div>
+              <div class="comp-col" role="cell"><span class="comp-check">✓</span></div>
+              <div class="comp-col" role="cell"><span class="comp-check">✓</span></div>
+            </div>
+            <div class="comparison-row" role="row">
+              <div class="comp-col comp-feature-col" role="cell">White-Label / Custom Branding</div>
+              <div class="comp-col comp-hollomind" role="cell"><span class="comp-check">✓</span></div>
+              <div class="comp-col" role="cell"><span class="comp-cross">✗</span></div>
+              <div class="comp-col" role="cell"><span class="comp-cross">✗</span></div>
+              <div class="comp-col" role="cell"><span class="comp-partial">◐</span></div>
+            </div>
+            <div class="comparison-row" role="row">
+              <div class="comp-col comp-feature-col" role="cell">SOC 2 &amp; ISO 27001 Certified</div>
+              <div class="comp-col comp-hollomind" role="cell"><span class="comp-check">✓</span></div>
+              <div class="comp-col" role="cell"><span class="comp-cross">✗</span></div>
+              <div class="comp-col" role="cell"><span class="comp-check">✓</span></div>
+              <div class="comp-col" role="cell"><span class="comp-partial">◐</span></div>
+            </div>
+            <div class="comparison-row" role="row">
+              <div class="comp-col comp-feature-col" role="cell">Generative AI Content</div>
+              <div class="comp-col comp-hollomind" role="cell"><span class="comp-check">✓</span></div>
+              <div class="comp-col" role="cell"><span class="comp-cross">✗</span></div>
+              <div class="comp-col" role="cell"><span class="comp-cross">✗</span></div>
+              <div class="comp-col" role="cell"><span class="comp-cross">✗</span></div>
+            </div>
+            <div class="comparison-row comparison-row-last" role="row">
+              <div class="comp-col comp-feature-col" role="cell">Starting Price</div>
+              <div class="comp-col comp-hollomind" role="cell"><span class="comp-price">$499/mo</span></div>
+              <div class="comp-col" role="cell"><span class="comp-price-muted">~$200/mo</span></div>
+              <div class="comp-col" role="cell"><span class="comp-price-muted">$1,800/mo</span></div>
+              <div class="comp-col" role="cell"><span class="comp-price-muted">$900/mo</span></div>
+            </div>
+          </div>
+
+          <div class="comparison-legend" aria-label="Legend">
+            <span><span class="comp-check comp-inline">✓</span> Fully supported</span>
+            <span><span class="comp-partial comp-inline">◐</span> Partial / add-on</span>
+            <span><span class="comp-cross comp-inline">✗</span> Not available</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         TEAM SECTION
+    ═══════════════════════════════════════════════════ -->
+    <section class="section team-section" id="team">
+      <div class="container">
+        <div class="text-center animate-on-scroll" style="margin-bottom:56px;">
+          <div class="section-eyebrow" style="justify-content:center;">Our Leadership</div>
+          <h2 class="section-title">The innovators behind <span class="text-gradient">Hollomind</span></h2>
+          <p class="section-subtitle" style="margin:0 auto;">A diverse team of industry veterans building the future of
+            enterprise AR.</p>
+        </div>
+
+        <div class="team-grid">
+          <!-- CEO: Mateo Rodriguez -->
+          <div class="team-card animate-on-scroll animate-delay-1">
+            <img class="team-avatar" src="mateo.jpg" alt="Mateo Rodriguez">
+            <div class="team-info">
+              <h3 class="team-name">Mateo Rodriguez</h3>
+              <div class="team-role">Chief Executive Officer</div>
+              <p class="team-desc">Former VP of Spatial Computing at Microsoft. Leads Hollomind's vision for
+                enterprise-scale AR adoption.</p>
+            </div>
+          </div>
+
+          <!-- CTO: Arjun Patel -->
+          <div class="team-card animate-on-scroll animate-delay-2">
+            <img class="team-avatar" src="arjun.jpg" alt="Arjun Patel">
+            <div class="team-info">
+              <h3 class="team-name">Arjun Patel</h3>
+              <div class="team-role">Chief Technology Officer</div>
+              <p class="team-desc">Ph.D. in Computer Vision from MIT. Architected the core NexVision AI model achieving
+                sub-12ms latency.</p>
+            </div>
+          </div>
+
+          <!-- Programming Lead: Elena Gomez -->
+          <div class="team-card animate-on-scroll animate-delay-3">
+            <img class="team-avatar" src="elena.jpg" alt="Elena Gomez">
+            <div class="team-info">
+              <h3 class="team-name">Elena Gomez</h3>
+              <div class="team-role">Programming Lead</div>
+              <p class="team-desc">10+ years optimizing real-time 3D rendering engines. Drives the engineering roadmap
+                for SmartTrain.</p>
+            </div>
+          </div>
+
+          <!-- Dev 1: Black Male -->
+          <div class="team-card animate-on-scroll animate-delay-4">
+            <div class="team-avatar" style="background:linear-gradient(135deg, #3B82F6, #8B5CF6);">DJ</div>
+            <div class="team-info">
+              <h3 class="team-name">David Jenkins</h3>
+              <div class="team-role">Senior Software Engineer</div>
+              <p class="team-desc">Specializes in edge AI deployment and IoT integrations for the AR Predict suite.</p>
+            </div>
+          </div>
+
+          <!-- Software Engineer: Maya Williams -->
+          <div class="team-card animate-on-scroll animate-delay-5">
+            <img class="team-avatar" src="maya.jpg" alt="Maya Williams">
+            <div class="team-info">
+              <h3 class="team-name">Maya Williams</h3>
+              <div class="team-role">Software Engineer</div>
+              <p class="team-desc">Full-stack developer focusing on the real-time Analytics Engine and customer
+                dashboards.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         CONTACT US
+    ═══════════════════════════════════════════════════ -->
+    <section class="section contact-section" id="contact-us">
+      <div class="container">
+        <div class="text-center animate-on-scroll" style="margin-bottom:56px;">
+          <div class="section-eyebrow" style="justify-content:center;">Get in Touch</div>
+          <h2 class="section-title">Schedule an <span class="text-gradient">Enterprise Consultation</span></h2>
+          <p class="section-subtitle" style="margin:0 auto;">Ready to deploy intelligent AR at scale? Speak with our
+            solution architects today.</p>
+        </div>
+
+        <div class="contact-grid animate-on-scroll">
+          <!-- Left: Contact Details -->
+          <div class="contact-info-panel">
+            <h3 class="contact-panel-title">Corporate Headquarters</h3>
+            <p class="contact-panel-desc">Reach out directly or visit our research centers worldwide.</p>
+
+            <div class="contact-methods">
+              <div class="contact-method-item">
+                <span class="contact-icon" aria-hidden="true">📍</span>
+                <div>
+                  <div class="contact-method-label">San Francisco Office (HQ)</div>
+                  <div class="contact-method-value">350 Mission St, San Francisco, CA 94105</div>
+                </div>
+              </div>
+              <div class="contact-method-item">
+                <span class="contact-icon" aria-hidden="true">📧</span>
+                <div>
+                  <div class="contact-method-label">Enterprise Solutions</div>
+                  <div class="contact-method-value">enterprise@hollomind.com</div>
+                </div>
+              </div>
+              <div class="contact-method-item">
+                <span class="contact-icon" aria-hidden="true">📞</span>
+                <div>
+                  <div class="contact-method-label">Global Direct Line</div>
+                  <div class="contact-method-value">+1 (415) 555-0198</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="office-hubs">
+              <div class="office-hub-title">Global Research Hubs</div>
+              <div class="office-hub-list">
+                <span>🇺🇸 Austin, TX</span>
+                <span>🇬🇧 London, UK</span>
+                <span>🇮🇳 Bangalore, IN</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Lead Form -->
+          <div class="contact-form-panel">
+            <form class="contact-form" id="enterpriseContactForm" onsubmit="handleContactSubmit(event)">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactName">Full Name</label>
+                  <input type="text" id="contactName" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                  <label for="contactEmail">Work Email</label>
+                  <input type="email" id="contactEmail" required placeholder="john@company.com">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactCompany">Company Name</label>
+                  <input type="text" id="contactCompany" required placeholder="Acme Corp">
+                </div>
+                <div class="form-group">
+                  <label for="contactSize">Company Size</label>
+                  <select id="contactSize">
+                    <option value="10-99">10 - 99 employees</option>
+                    <option value="100-499">100 - 499 employees</option>
+                    <option value="500-2499">500 - 2,499 employees</option>
+                    <option value="2500+">2,500+ employees</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contactInterest">Primary Use Case</label>
+                <select id="contactInterest">
+                  <option value="vision">AR Spatial AI / Environment Recon</option>
+                  <option value="training">SmartTrain Workforce Onboarding</option>
+                  <option value="analytics">Performance Analytics &amp; UX Heatmaps</option>
+                  <option value="predict">Predictive Maintenance &amp; IoT Overlay</option>
+                  <option value="custom">Custom R&amp;D Integration</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage">Project Details / Requirements</label>
+                <textarea id="contactMessage" rows="4" required
+                  placeholder="Describe your deployment scale, hardware specifications, and timelines..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Submit Request
+                for Proposal →</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════
+         CTA SECTION
+    ═══════════════════════════════════════════════════ -->
+    <section class="section cta-section" id="cta">
+      <div class="container">
+        <div class="cta-box animate-on-scroll">
+          <div class="section-eyebrow" style="justify-content:center;" aria-hidden="true">Ready to Begin?</div>
+          <h2 class="cta-headline">
+            Start your AR transformation<br />
+            <span class="text-gradient">today — for free.</span>
+          </h2>
+          <p class="cta-subtext">Get full platform access for 14 days. No credit card required. Your dedicated Customer
+            Success Manager will have you live within 24 hours.</p>
+          <div class="cta-buttons">
+            <a href="#" class="btn btn-primary btn-lg" id="ctaStartTrial">
+              Start Free 14-Day Trial →
+            </a>
+            <a href="#" class="btn btn-secondary btn-lg" id="ctaBookDemo">
+              📅 Book a Live Demo
+            </a>
+          </div>
+          <p class="cta-note">
+            <strong>No credit card required.</strong> Setup in under 10 minutes. Cancel anytime.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════ -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <a href="#" class="nav-logo" id="footerLogo">
+            <div class="nav-logo-icon" aria-hidden="true">◈</div>
+            Hollomind
+          </a>
+          <p class="footer-brand-desc">The leading B2B SaaS platform for AI-powered augmented reality. Helping
+            enterprise teams augment reality, amplify intelligence.</p>
+          <div class="footer-social" aria-label="Social media links">
+            <a href="#" class="social-link" aria-label="LinkedIn" id="socialLinkedIn">in</a>
+            <a href="#" class="social-link" aria-label="Twitter/X" id="socialTwitter">𝕏</a>
+            <a href="#" class="social-link" aria-label="YouTube" id="socialYouTube">▶</a>
+            <a href="#" class="social-link" aria-label="GitHub" id="socialGitHub">⌥</a>
+          </div>
+        </div>
+
+        <!-- Products -->
+        <div>
+          <div class="footer-col-title">Products</div>
+          <ul class="footer-links">
+            <li><a href="#products" class="footer-link" id="ftAR Vision">AR Vision AI</a></li>
+            <li><a href="#products" class="footer-link" id="ftSmartTrain">SmartTrain AR</a></li>
+            <li><a href="#products" class="footer-link" id="ftAnalytics">Analytics Engine</a></li>
+            <li><a href="#products" class="footer-link" id="ftStudio">Hollomind Studio</a></li>
+            <li><a href="#products" class="footer-link" id="ftHoloCollab">HoloCollab</a></li>
+            <li><a href="#products" class="footer-link" id="ftARPredict">AR Predict</a></li>
+          </ul>
+        </div>
+
+        <!-- Platform -->
+        <div>
+          <div class="footer-col-title">Platform</div>
+          <ul class="footer-links">
+            <li><a href="#features" class="footer-link" id="ftSecurity">Security</a></li>
+            <li><a href="#features" class="footer-link" id="ftIntegrations">Integrations</a></li>
+            <li><a href="#" class="footer-link" id="ftAPI">API Docs</a></li>
+            <li><a href="#" class="footer-link" id="ftChangelog">Changelog</a></li>
+            <li><a href="#" class="footer-link" id="ftStatus">System Status</a></li>
+          </ul>
+        </div>
+
+        <!-- Company -->
+        <div>
+          <div class="footer-col-title">Company</div>
+          <ul class="footer-links">
+            <li><a href="#" class="footer-link" id="ftAbout">About Us</a></li>
+            <li><a href="#" class="footer-link" id="ftCareers">Careers <span
+                  style="color:var(--emerald);font-size:0.72rem;font-weight:600;">We're hiring!</span></a></li>
+            <li><a href="#" class="footer-link" id="ftPartners">Partners</a></li>
+            <li><a href="#" class="footer-link" id="ftPress">Press</a></li>
+            <li><a href="#contact" class="footer-link" id="ftContact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Resources -->
+        <div>
+          <div class="footer-col-title">Resources</div>
+          <ul class="footer-links">
+            <li><a href="#resources" class="footer-link" id="ftBlog">Blog</a></li>
+            <li><a href="#" class="footer-link" id="ftCaseStudies">Case Studies</a></li>
+            <li><a href="#" class="footer-link" id="ftWebinars">Webinars</a></li>
+            <li><a href="#" class="footer-link" id="ftDocs">Documentation</a></li>
+            <li><a href="#" class="footer-link" id="ftCommunity">Community</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-bottom-left">© 2025 Hollomind Technologies, Inc. All rights reserved.</div>
+        <div class="footer-bottom-links">
+          <a href="#" id="ftPrivacy">Privacy Policy</a>
+          <a href="#" id="ftTerms">Terms of Service</a>
+          <a href="#" id="ftCookies">Cookie Policy</a>
+          <a href="#" id="ftGDPR">GDPR</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════════════
+       DEMO MODAL
+  ═══════════════════════════════════════════════════ -->
+  <div class="demo-modal-overlay" id="demoModal" role="dialog" aria-modal="true" aria-label="Product Demo" hidden>
+    <div class="demo-modal">
+      <div class="demo-modal-header">
+        <div>
+          <div class="demo-modal-eyebrow">Interactive Demo</div>
+          <h2 class="demo-modal-title">Hollomind Platform Tour</h2>
+        </div>
+        <button class="demo-modal-close" id="demoModalClose" aria-label="Close demo">✕</button>
+      </div>
+
+      <!-- Tab nav -->
+      <div class="demo-tabs" role="tablist" aria-label="Demo product tabs">
+        <button class="demo-tab active" id="demoTab1" role="tab" aria-selected="true" aria-controls="demoPanel1"
+          data-tab="1">🧠 Vision AI</button>
+        <button class="demo-tab" id="demoTab2" role="tab" aria-selected="false" aria-controls="demoPanel2"
+          data-tab="2">🎓 SmartTrain</button>
+        <button class="demo-tab" id="demoTab3" role="tab" aria-selected="false" aria-controls="demoPanel3"
+          data-tab="3">📊 Analytics</button>
+        <button class="demo-tab" id="demoTab4" role="tab" aria-selected="false" aria-controls="demoPanel4"
+          data-tab="4">⚙️ AR Predict</button>
+      </div>
+
+      <!-- Demo Panels -->
+      <div class="demo-panels">
+        <!-- Panel 1: Vision AI -->
+        <div class="demo-panel active" id="demoPanel1" role="tabpanel" aria-labelledby="demoTab1">
+          <div class="demo-split">
+            <div class="demo-panel-info">
+              <h3 class="demo-panel-title">AR Vision AI</h3>
+              <p class="demo-panel-desc">Our proprietary NexVision model detects and maps physical environments in under
+                12ms with 99.1% accuracy.</p>
+              <div class="demo-stats-row">
+                <div class="demo-stat">
+                  <div class="demo-stat-val text-gradient">99.1%</div>
+                  <div class="demo-stat-label">Detection Accuracy</div>
+                </div>
+                <div class="demo-stat">
+                  <div class="demo-stat-val" style="color:var(--cyan);">&lt;12ms</div>
+                  <div class="demo-stat-label">Inference Latency</div>
+                </div>
+                <div class="demo-stat">
+                  <div class="demo-stat-val" style="color:var(--emerald);">2,800+</div>
+                  <div class="demo-stat-label">Object Classes</div>
+                </div>
+              </div>
+              <div class="demo-feature-list">
+                <div class="demo-feature-item"><span class="demo-check">✓</span> Real-time 3D spatial mesh generation
+                </div>
+                <div class="demo-feature-item"><span class="demo-check">✓</span> Multi-surface material recognition
+                </div>
+                <div class="demo-feature-item"><span class="demo-check">✓</span> Edge-AI — runs fully offline on device
+                </div>
+                <div class="demo-feature-item"><span class="demo-check">✓</span> One-shot learning for custom objects
+                </div>
+              </div>
+            </div>
+            <div class="demo-panel-visual" aria-label="AR Vision AI visualization">
+              <div class="demo-ar-viewport">
+                <div class="demo-scan-overlay"></div>
+                <div class="demo-ar-label demo-ar-label-1">📦 Machinery Unit A3<br /><span
+                    style="color:var(--emerald);font-size:0.7rem;">Confidence: 99.4%</span></div>
+                <div class="demo-ar-label demo-ar-label-2">⚠️ Wear Detected<br /><span
+                    style="color:#F59E0B;font-size:0.7rem;">Bearing: 67% life remaining</span></div>
+                <div class="demo-ar-crosshair" aria-hidden="true"></div>
+                <div class="demo-ar-fps" aria-hidden="true">60 FPS · LIVE</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 2: SmartTrain -->
+        <div class="demo-panel" id="demoPanel2" role="tabpanel" aria-labelledby="demoTab2" hidden>
+          <div class="demo-split">
+            <div class="demo-panel-info">
+              <h3 class="demo-panel-title">SmartTrain AR</h3>
+              <p class="demo-panel-desc">AI-adaptive training that learns from every interaction. Personalized to each
+                employee's pace, knowledge level, and learning style.</p>
+              <div class="demo-stats-row">
+                <div class="demo-stat">
+                  <div class="demo-stat-val text-gradient">62%</div>
+                  <div class="demo-stat-label">Faster Onboarding</div>
+                </div>
+                <div class="demo-stat">
+                  <div class="demo-stat-val" style="color:var(--cyan);">3.2x</div>
+                  <div class="demo-stat-label">Retention Rate</div>
+                </div>
+                <div class="demo-stat">
+                  <div class="demo-stat-val" style="color:var(--emerald);">94%</div>
+                  <div class="demo-stat-label">Completion Rate</div>
+                </div>
+              </div>
+              <div class="demo-progress-wrap">
+                <div class="demo-progress-label">Module Completion — Sarah K. (Day 3 of onboarding)</div>
+                <div class="demo-progress-list">
+                  <div class="demo-prog-item"><span>Safety Protocols</span>
+                    <div class="demo-prog-bar">
+                      <div class="demo-prog-fill" style="width:100%;background:var(--emerald);"></div>
+                    </div><span style="color:var(--emerald);">100%</span>
+                  </div>
+                  <div class="demo-prog-item"><span>Equipment Setup</span>
+                    <div class="demo-prog-bar">
+                      <div class="demo-prog-fill" style="width:85%;background:var(--violet);"></div>
+                    </div><span>85%</span>
+                  </div>
+                  <div class="demo-prog-item"><span>Quality Inspection</span>
+                    <div class="demo-prog-bar">
+                      <div class="demo-prog-fill" style="width:42%;background:var(--cyan);"></div>
+                    </div><span>42%</span>
+                  </div>
+                  <div class="demo-prog-item"><span>Emergency Procedures</span>
+                    <div class="demo-prog-bar">
+                      <div class="demo-prog-fill" style="width:0%;background:var(--text-muted);"></div>
+                    </div><span style="color:var(--text-muted);">Locked</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="demo-panel-visual" aria-label="SmartTrain module visualization">
+              <div class="demo-training-card">
+                <div class="demo-training-header">
+                  <span style="font-size:1.4rem;">🎓</span>
+                  <div>
+                    <div style="font-weight:700;font-size:0.9rem;">Equipment Setup — Step 4/7</div>
+                    <div style="font-size:0.75rem;color:var(--text-muted);">AI Difficulty: Intermediate</div>
+                  </div>
+                  <div class="badge badge-emerald" style="margin-left:auto;">On Track</div>
+                </div>
+                <div class="demo-training-body">
+                  <div class="demo-3d-box" aria-hidden="true">
+                    <div class="demo-3d-inner">⚙️</div>
+                    <div class="demo-3d-ring"></div>
+                    <div class="demo-3d-arrow">➜</div>
+                  </div>
+                  <p style="font-size:0.82rem;color:var(--text-secondary);text-align:center;margin-top:12px;">Rotate the
+                    calibration knob clockwise until LED turns green</p>
+                </div>
+                <div class="demo-training-footer">
+                  <button class="btn btn-secondary btn-sm">← Previous</button>
+                  <div style="font-size:0.78rem;color:var(--text-muted);">Step 4 of 7</div>
+                  <button class="btn btn-primary btn-sm">Next →</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 3: Analytics -->
+        <div class="demo-panel" id="demoPanel3" role="tabpanel" aria-labelledby="demoTab3" hidden>
+          <div class="demo-split">
+            <div class="demo-panel-info">
+              <h3 class="demo-panel-title">AR Analytics Engine</h3>
+              <p class="demo-panel-desc">ML-powered behavioral analytics reveal exactly how teams interact with AR
+                content. Surface ROI automatically.</p>
+              <div class="demo-insight-cards">
+                <div class="demo-insight-card" style="border-color:rgba(124,58,237,0.3);">
+                  <div class="demo-insight-icon" aria-hidden="true">🤖</div>
+                  <div>
+                    <div class="demo-insight-title">AI Prediction</div>
+                    <div class="demo-insight-text">Module 3 has a <strong>73% predicted drop-off</strong> at step 4.
+                      Recommend simplifying the AR overlay at timestamp 2:14.</div>
+                  </div>
+                </div>
+                <div class="demo-insight-card" style="border-color:rgba(16,185,129,0.3);">
+                  <div class="demo-insight-icon" aria-hidden="true">📈</div>
+                  <div>
+                    <div class="demo-insight-title">ROI Signal</div>
+                    <div class="demo-insight-text">AR training correlated with <strong>41% fewer QA failures</strong> in
+                      the past 30 days. Est. savings: <strong>$182,000</strong>.</div>
+                  </div>
+                </div>
+                <div class="demo-insight-card" style="border-color:rgba(6,182,212,0.3);">
+                  <div class="demo-insight-icon" aria-hidden="true">🎯</div>
+                  <div>
+                    <div class="demo-insight-title">Engagement Heatmap</div>
+                    <div class="demo-insight-text">Users spend 3.2× longer on interactive 3D steps vs static content.
+                      <strong>Recommend converting 6 slides to AR overlays.</strong></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="demo-panel-visual" aria-label="Analytics mini-dashboard">
+              <div class="demo-analytics-dash">
+                <div
+                  style="font-size:0.78rem;font-weight:600;color:var(--text-muted);margin-bottom:12px;text-transform:uppercase;letter-spacing:0.08em;">
+                  30-Day Performance</div>
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px;">
+                  <div class="dash-metric">
+                    <div class="dash-metric-label">Completions</div>
+                    <div class="dash-metric-value" style="color:var(--emerald);font-size:1.4rem;">12,847</div>
+                    <div class="dash-metric-change">↑ 18%</div>
+                  </div>
+                  <div class="dash-metric">
+                    <div class="dash-metric-label">Avg Score</div>
+                    <div class="dash-metric-value text-gradient" style="font-size:1.4rem;">91.4%</div>
+                    <div class="dash-metric-change">↑ 6.2 pts</div>
+                  </div>
+                </div>
+                <svg viewBox="0 0 220 80" style="width:100%;height:80px;" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="ag2" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.35" />
+                      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="lg2" x1="0" y1="0" x2="1" y2="0">
+                      <stop offset="0%" stop-color="#7C3AED" />
+                      <stop offset="100%" stop-color="#06B6D4" />
+                    </linearGradient>
+                  </defs>
+                  <path d="M0 70 C20 60,40 55,60 45 C80 35,100 40,120 30 C140 20,160 25,180 12 C195 4,205 3,220 1"
+                    fill="none" stroke="url(#lg2)" stroke-width="2.5" />
+                  <path
+                    d="M0 70 C20 60,40 55,60 45 C80 35,100 40,120 30 C140 20,160 25,180 12 C195 4,205 3,220 1 L220 80 L0 80Z"
+                    fill="url(#ag2)" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 4: AR Predict -->
+        <div class="demo-panel" id="demoPanel4" role="tabpanel" aria-labelledby="demoTab4" hidden>
+          <div class="demo-split">
+            <div class="demo-panel-info">
+              <h3 class="demo-panel-title">AR Predict</h3>
+              <p class="demo-panel-desc">Predictive maintenance powered by IoT + ML. Overlays failure predictions
+                directly onto machinery in real-time.</p>
+              <div class="demo-alert-list">
+                <div class="demo-alert demo-alert-red">
+                  <span class="demo-alert-icon" aria-hidden="true">🔴</span>
+                  <div>
+                    <div class="demo-alert-title">Critical — Compressor Unit B7</div>
+                    <div class="demo-alert-msg">Bearing failure predicted in <strong>18–24 hours</strong>. Immediate
+                      inspection required. AR guide ready.</div>
+                  </div>
+                  <button class="btn btn-sm"
+                    style="background:rgba(239,68,68,0.2);color:#EF4444;border:1px solid rgba(239,68,68,0.3);flex-shrink:0;">View
+                    AR →</button>
+                </div>
+                <div class="demo-alert demo-alert-yellow">
+                  <span class="demo-alert-icon" aria-hidden="true">🟡</span>
+                  <div>
+                    <div class="demo-alert-title">Warning — Pump Station 3</div>
+                    <div class="demo-alert-msg">Vibration anomaly detected. <strong>Seal replacement recommended within
+                        7 days.</strong></div>
+                  </div>
+                  <button class="btn btn-sm"
+                    style="background:rgba(245,158,11,0.2);color:#F59E0B;border:1px solid rgba(245,158,11,0.3);flex-shrink:0;">Schedule
+                    →</button>
+                </div>
+                <div class="demo-alert demo-alert-green">
+                  <span class="demo-alert-icon" aria-hidden="true">🟢</span>
+                  <div>
+                    <div class="demo-alert-title">Healthy — HVAC System A</div>
+                    <div class="demo-alert-msg">All sensors nominal. Next predicted service: <strong>March 14,
+                        2026.</strong></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="demo-panel-visual" aria-label="AR Predict uptime visualization">
+              <div
+                style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:20px;">
+                <div
+                  style="font-size:0.78rem;font-weight:600;color:var(--text-muted);margin-bottom:16px;text-transform:uppercase;letter-spacing:0.08em;">
+                  Fleet Health Overview</div>
+                <div style="display:flex;flex-direction:column;gap:10px;">
+                  <div class="demo-fleet-row"><span class="demo-fleet-label">Compressor Array</span>
+                    <div class="demo-fleet-bar">
+                      <div
+                        style="width:32%;background:linear-gradient(90deg,#EF4444,#F59E0B);border-radius:3px;height:100%;">
+                      </div>
+                    </div><span style="color:#EF4444;font-size:0.78rem;font-weight:600;">At Risk</span>
+                  </div>
+                  <div class="demo-fleet-row"><span class="demo-fleet-label">Conveyor System</span>
+                    <div class="demo-fleet-bar">
+                      <div
+                        style="width:88%;background:linear-gradient(90deg,var(--violet),var(--cyan));border-radius:3px;height:100%;">
+                      </div>
+                    </div><span style="color:var(--emerald);font-size:0.78rem;">Good</span>
+                  </div>
+                  <div class="demo-fleet-row"><span class="demo-fleet-label">Robotic Arms (12)</span>
+                    <div class="demo-fleet-bar">
+                      <div
+                        style="width:95%;background:linear-gradient(90deg,var(--emerald),var(--cyan));border-radius:3px;height:100%;">
+                      </div>
+                    </div><span style="color:var(--emerald);font-size:0.78rem;">Excellent</span>
+                  </div>
+                  <div class="demo-fleet-row"><span class="demo-fleet-label">Pump Station</span>
+                    <div class="demo-fleet-bar">
+                      <div
+                        style="width:61%;background:linear-gradient(90deg,#F59E0B,var(--violet));border-radius:3px;height:100%;">
+                      </div>
+                    </div><span style="color:#F59E0B;font-size:0.78rem;">Monitor</span>
+                  </div>
+                  <div class="demo-fleet-row"><span class="demo-fleet-label">HVAC Array</span>
+                    <div class="demo-fleet-bar">
+                      <div
+                        style="width:99%;background:linear-gradient(90deg,var(--emerald),#06B6D4);border-radius:3px;height:100%;">
+                      </div>
+                    </div><span style="color:var(--emerald);font-size:0.78rem;">Excellent</span>
+                  </div>
+                </div>
+                <div
+                  style="margin-top:16px;padding:12px;background:rgba(239,68,68,0.08);border:1px solid rgba(239,68,68,0.2);border-radius:var(--radius-md);font-size:0.8rem;color:#FCA5A5;">
+                  ⚡ <strong>AI Alert:</strong> Scheduling compressor maintenance now saves est. <strong>$48,000</strong>
+                  vs emergency repair.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="demo-modal-footer">
+        <p style="font-size:0.82rem;color:var(--text-muted);">This is a live interactive preview. <a href="#cta"
+            style="color:var(--violet-light);" onclick="closeDemoModal()">Start your free trial</a> for full access.</p>
+        <a href="#cta" class="btn btn-primary" onclick="closeDemoModal()" id="demoGetStarted">Get Full Access →</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
